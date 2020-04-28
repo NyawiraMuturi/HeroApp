@@ -16,6 +16,14 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
+        get("/heroform", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+
+            model.put("template", "templates/heroform.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+
         get("/hero", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 
