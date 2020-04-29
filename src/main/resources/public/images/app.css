@@ -11,3 +11,13 @@ body{
     color: black;
     overflow-x: hidden;
 }
+.landing{
+    overflow: hidden;
+    position: absolute;
+}
+.card {
+    z-index: 2;
+    align-items: center;
+    text-align: center;
+    padding-top: 12rem;
+}
