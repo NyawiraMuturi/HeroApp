@@ -1,0 +1,19 @@
+<div class="homesquad">
+    <p>.</p>
+    <h1 style="font-family: 'Anton', sans-serif; margin-top:10%;color:white;font-size:50px;">DRUM ROLL!!</h1>
+    <h4 style="color:white;">Here are a few Heroes.</h4>
+
+    #if ($heroName)
+
+    <h3 style="font-family: 'Chakra Petch', sans-serif; margin-top:5%;">$heroName</h3>
+
+    <h3 style="font-family: 'Hi Melody', cursive;">$heroAge</h3>
+    <h4 style="font-family: 'Hi Melody', cursive;">$specialPower</h4>
+    <h4 style="font-family: 'Hi Melody', cursive;">$weakness</h4>
+    <hr style="width:50%;opacity:0.2">
+
+    #else
+      <hr style="width:50%;opacity:0.2">
+      No heroes yet. Please Add!
+    #end
+</div>
