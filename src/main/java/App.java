@@ -52,13 +52,13 @@ public class App {
 
             String heroName = request.queryParams("heroName");
             String heroAge = request.queryParams("heroAge");
-            String heroPower = request.queryParams("heroPower");
-            String heroWeakness = request.queryParams("heroWeakness");
+            String specialPower = request.queryParams("specialPower");
+            String weakness = request.queryParams("weakness");
 
             model.put("heroName", heroName);
             model.put("heroAge", heroAge);
-            model.put("heroPower", heroPower);
-            model.put("heroWeakness", heroWeakness);
+            model.put("heroPower", specialPower);
+            model.put("weakness", weakness);
             model.put("template", "templates/hero.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
