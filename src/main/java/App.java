@@ -35,7 +35,7 @@ public class App {
             model.put("squadName", squadName);
             model.put("squadSize", squadSize);
             model.put("squadCause", squadCause);
-            model.put("template", "templates/squadteam.vtl");
+            model.put("template", "templates/squadlist.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
